@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&family=Teko:wght@300;400&display=swap');
+
+:root{
+    --degrade: linear-gradient(to right, cyan, yellow);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Base do site*/
+body{
+    background: var(--degrade);
+    font-family: 'Orbitron', sans-serif;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.253);
+    padding: 5px;
+}
+
+header .logo{
+    color: rgb(245, 245, 9);
+    font-size: 40px;
+    margin-left: 6px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+header nav a:hover{
+    color: yellow;
+    transition: 0.5s;
+}
+
+header .tipos{
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+/*Jogo principal*/
+.jogo-principal{
+    font-size: 15px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)), url(/AuroraGames/img/dying.png);
+
+    height: 500px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:last baseline;
+    align-items:flex-end;
+}
+
+.jogo-principal .descricao{
+    margin-bottom: 40px;
+    font-size: 30px;
+    color: white;
+    font-family: 'Teko', sans-serif;
+}
+
+.titulo{
+    margin-top: 20%;
+    font-size: 40px;
+    color: yellow;
+}
+
+.botao{
+    background-color: rgba(0, 0, 0, 0.199);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.botao i{
+    margin-right: 10px;
+}
+
+.container{
+    align-items: center;
+}
+
+.jogo-principal .container{
+    width: 50%;
+}
+
+.box-jogos{
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.box-jogos:hover{
+    border: 2px solid white;
+    transition: 0.5s;
+}
